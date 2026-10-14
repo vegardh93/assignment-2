@@ -1,0 +1,31 @@
+/* Colors and fonts */
+:root {
+    --colorBackground: #f1f5fb;
+    --colorWhite: #ffffff;
+    --colorBlue: #1558ac;
+    --colorNavy: #071c38;
+    --colorCard: #06162d;
+    --colorCardBorder: #1b365b;
+    --colorText: #092449;
+    --colorCardText: #f3f7ff;
+    --colorCardMuted: #a8bfdc;
+    --fontBody: "DM Sans", Arial, sans-serif;
+    --fontDisplay: "Outfit", Arial, sans-serif;
+}
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    color: var(--colorText);
+    background: var(--colorBackground);
+    font-family: var(--fontBody);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
