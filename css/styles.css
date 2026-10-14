@@ -29,3 +29,23 @@ img {
     display: block;
     max-width: 100%;
 }
+
+/* Header */
+.siteHeader {
+    background-color: var(--colorWhite);
+    border-bottom: 2px solid var(--colorblue);
+}
+
+.siteHeader__content {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.siteHeader__logo {
+    width: 54px;
+    height: auto;
+}
