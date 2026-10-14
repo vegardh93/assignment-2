@@ -9,8 +9,8 @@
     --colorText: #092449;
     --colorCardText: #f3f7ff;
     --colorCardMuted: #a8bfdc;
-    --fontBody: "DM Sans", Arial, sans-serif;
-    --fontDisplay: "Outfit", Arial, sans-serif;
+    --fontBody: "DM Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --fontDisplay: "Outfit", "Avenir Next", "Segoe UI", Arial, sans-serif;
 }
 
 /* Global styles */
