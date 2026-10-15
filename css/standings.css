@@ -123,3 +123,26 @@
     object-fit: contain;
     vertical-align: middle;
 }
+
+/* Adjustments for small screens: reduced spacing and smaller font sizes */
+@media (max-width: 500px) {
+    .standings__content {
+        width: calc(100% - 24px);
+        padding: 32px 0 48px;
+    }
+    .standings__title {
+        font-size: 1.75rem;
+    }
+    .standings__note {
+        margin-bottom: 36px;
+    }
+    .standings__conference {
+        margin-bottom: 36px;
+    }
+    .standings__conferenceTitle {
+        font-size: 1.25rem;
+    }
+    .standings__divisionTitle {
+        font-size: 1rem;
+    }
+}
