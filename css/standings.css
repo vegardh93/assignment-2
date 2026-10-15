@@ -1,0 +1,125 @@
+/* Standings layout */
+.standings__content {
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 48px 0 64px;
+}
+
+.standings__title {
+    margin: 0 0 12px;
+    color: var(--colorText);
+    font-family: var(--fontDisplay);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.standings__note {
+    margin: 0 0 40px;
+    color: var(--colorText);
+    font-size: 0.875rem;
+}
+
+/* Conference and division headings */
+.standings__conference {
+    margin-bottom: 48px;
+}
+
+.standings__conferenceTitle {
+    margin: 0 0 24px;
+    color: var(--colorNavy);
+    font-family: var(--fontDisplay);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.standings__divisionTitle {
+    margin: 32px 0 16px;
+    color: var(--colorBlue);
+    font-family: var(--fontDisplay);
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+/* Standings table */
+/* Table container and scrolling */
+.standings__tableWrapper {
+    overflow: hidden;
+    border: 1px solid var(--colorCardBorder);
+    border-radius: 12px;
+}
+
+.standings__tableScroll {
+    overflow-x: auto;
+}
+
+/* Table layout */
+.standings__table {
+    width: 100%;
+    min-width: 1100px;
+    table-layout: fixed;
+    border-collapse: collapse;
+    background-color: var(--colorWhite);
+    font-size: 0.875rem;
+}
+
+/* Table cells */
+.standings__table th,
+.standings__table td {
+    padding: 14px 6px;
+    border-bottom: 1px solid var(--colorTableBorder);
+    text-align: center;
+    white-space: nowrap;
+}
+
+.standings__table th:first-child {
+    padding-left: 18px;
+}
+
+.standings__table th:last-child,
+.standings__table td:last-child {
+    padding-right: 18px;
+}
+
+/* Table headings */
+.standings__table thead {
+    color: var(--colorWhite);
+    background-color: var(--colorNavy);
+    font-family: var(--fontDisplay);
+}
+
+.standings__table thead th {
+    font-weight: 600;
+}
+
+.standings__table thead th:first-child {
+    width: 248px;
+}
+
+.standings__table thead th:nth-child(14) {
+    width: 100px;
+}
+
+/* Table rows */
+.standings__table tbody tr:nth-child(even) {
+    background-color: var(--colorBackground);
+}
+
+.standings__table tbody tr:last-child th,
+.standings__table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Team names and logos */
+.standings__table .standings__team {
+    text-align: left;
+    font-weight: 600;
+}
+
+.standings__team img {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    margin-right: 10px;
+    object-fit: contain;
+    vertical-align: middle;
+}
