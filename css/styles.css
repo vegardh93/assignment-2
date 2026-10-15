@@ -9,6 +9,8 @@
     --colorText: #092449;
     --colorCardText: #f3f7ff;
     --colorCardMuted: #a8bfdc;
+    --colorForward: #263c88;
+    --colorGoaltender: #006B91;
     --fontBody: "DM Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     --fontDisplay: "Outfit", "Avenir Next", "Segoe UI", Arial, sans-serif;
 }
@@ -100,15 +102,30 @@ img {
 
 /* Player cards */
 .playerCard {
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
     overflow: hidden;
-    background-color: var(--colorCard);
+    background-color: pink;
     border: 1px solid var(--colorCardBorder);
     border-radius: 20px;
 }
 
+.playerCard--forward {
+    background-color: var(--colorForward);
+}
+
+.playerCard--defense {
+    background-color: var(--colorBlue);
+}
+
+.playerCard--goaltender {
+    background-color: var(--colorGoaltender);
+}
+
 .playerCard__imageContainer {
     position: relative;
-    margin: 12px 12px 0;
+    margin: 0;
     overflow: hidden;
     border-radius: 10px;
     background-color: var(--colorNavy);
@@ -135,6 +152,18 @@ img {
     font-weight: 700;
 }
 
+.playerCard__role--forward {
+    background-color: var(--colorForward);
+}
+
+.playerCard__role--defense {
+    background-color: var(--colorBlue);
+}
+
+.playerCard__role--goaltender {
+    background-color: var(--colorGoaltender);
+}
+
 .playerCard__number {
     position: absolute;
     top: 10px;
@@ -146,12 +175,13 @@ img {
     text-shadow: 0 2px 6px #00000080;
 }
 
-
 .playerCard__content {
     display: flex;
     flex: 1;
     flex-direction: column;
     padding: 24px;
+    border-radius: 0 0 10px 10px;
+    background-color: var(--colorCard);
 }
 
 .playerCard__name {
