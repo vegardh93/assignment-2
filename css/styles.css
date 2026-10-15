@@ -33,7 +33,7 @@ img {
 /* Header */
 .siteHeader {
     background-color: var(--colorWhite);
-    border-bottom: 2px solid var(--colorblue);
+    border-bottom: 2px solid var(--colorBlue);
 }
 
 .siteHeader__content {
@@ -48,4 +48,104 @@ img {
 .siteHeader__logo {
     width: 54px;
     height: auto;
+}
+
+/* Squad section */
+.squad__content {
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 48px 0 64px;
+}
+
+.squad__title {
+    margin: 0 0 28px;
+    font-family: var(--fontDisplay);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.squad__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 24px;
+}
+
+/* Player cards */
+.playerCard {
+    overflow: hidden;
+    background-color: var(--colorCard);
+    border: 1px solid var(--colorCardBorder);
+    border-radius: 20px;
+}
+
+.playerCard__imageContainer {
+    position: relative;
+    margin: 12px 12px 0;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: var(--colorNavy);
+}
+
+.playerCard__image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    object-position: center 30%;;
+}
+
+.playerCard__role {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    padding: 8px 12px;
+    color: var(--colorWhite);
+    background-color: var(--colorBlue);
+    border-radius: 6px;
+    font-family: var(--fontDisplay);
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.playerCard__number {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    color: var(--colorWhite);
+    font-family: var(--fontDisplay);
+    font-size: 2rem;
+    font-weight: 800;
+    text-shadow: 0 2px 6px #00000080;
+}
+
+
+.playerCard__content {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    padding: 24px;
+}
+
+.playerCard__name {
+    margin: 0 0 6px;
+    color: var(--colorCardText);
+    font-family: var(--fontDisplay);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.playerCard__position {
+    margin: 0 0 20px;
+    color: var(--colorCardMuted);
+    font-size: 0.9rem;
+}
+
+.playerCard__details {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin: auto 0 0;
+    padding-top: 16px;
+    border-top: 1px solid var(--colorCardBorder);
+    color: var(--colorCardText);
+    font-size: 0.85rem;
 }
