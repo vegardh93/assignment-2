@@ -46,8 +46,36 @@ img {
 }
 
 .siteHeader__logo {
-    width: 54px;
+    width: 75px;
     height: auto;
+    transform: translateY(-4px);
+}
+
+.siteHeader__title {
+    margin: 0;
+    color: var(--colorNavy);
+    font-family: var(--fontDisplay);
+    line-height: 1.1;
+}
+
+.siteHeader__city,
+.siteHeader__teamName {
+    display: block;
+    text-transform: uppercase;
+}
+
+.siteHeader__city {
+    color: var(--colorBlue);
+    font-size: 0.875rem;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+}
+
+.siteHeader__teamName {
+    margin-top: 2px;
+    font-size: 1.25rem;
+    font-weight: 800;
+    letter-spacing: 0.025em;
 }
 
 /* Squad section */
@@ -184,7 +212,7 @@ img {
         padding: 14px 0;
     }
     .siteHeader__logo {
-        width: 44px;
+        width: 72px;
     }
     .squad__content {
         padding: 32px 0 48px;
