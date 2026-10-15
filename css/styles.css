@@ -88,7 +88,8 @@ img {
 
 .playerCard__image {
     width: 100%;
-    height: 200px;
+    height: auto;
+    aspect-ratio: 1 / 1;
     object-fit: cover;
     object-position: center 30%;;
 }
@@ -148,4 +149,30 @@ img {
     border-top: 1px solid var(--colorCardBorder);
     color: var(--colorCardText);
     font-size: 0.85rem;
+}
+
+/* Adjustments for small screens: reduced spacing and single-column layout */
+@media (max-width: 500px) {
+    .siteHeader__content,
+    .squad__content {
+        width: calc(100% - 24px);
+    }
+    .siteHeader__content {
+        gap: 12px;
+        padding: 14px 0;
+    }
+    .siteHeader__logo {
+        width: 44px;
+    }
+    .squad__content {
+        padding: 32px 0 48px;
+    }
+    .squad__title {
+        margin-bottom: 20px;
+        font-size: 1.75rem;
+    }
+    .squad__grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
 }
