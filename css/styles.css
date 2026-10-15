@@ -151,10 +151,32 @@ img {
     font-size: 0.85rem;
 }
 
+/* Footer */
+.siteFooter {
+    background-color: var(--colorWhite);
+    border-top: 2px solid var(colorBlue);
+}
+
+.siteFooter__content {
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.siteFooter__disclaimer {
+    margin: 0;
+    color: var(--colorText);
+    font-size: 0.875rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+
 /* Adjustments for small screens: reduced spacing and single-column layout */
 @media (max-width: 500px) {
     .siteHeader__content,
-    .squad__content {
+    .squad__content,
+    .witeFooter__content {
         width: calc(100% - 24px);
     }
     .siteHeader__content {
