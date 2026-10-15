@@ -32,6 +32,14 @@ img {
     max-width: 100%;
 }
 
+/* Shared content layout */
+.siteHeader__content,
+.squad__content,
+.siteFooter__content {
+    width: min(1200px, calc(100% - 40px));
+    margin: 0 auto;
+}
+
 /* Header */
 .siteHeader {
     background-color: var(--colorWhite);
@@ -42,8 +50,6 @@ img {
     display: flex;
     align-items: center;
     gap: 16px;
-    width: min(1200px, calc(100% - 40px));
-    margin: 0 auto;
     padding: 20px 0;
 }
 
@@ -82,8 +88,6 @@ img {
 
 /* Squad section */
 .squad__content {
-    width: min(1200px, calc(100% - 40px));
-    margin: 0 auto;
     padding: 48px 0 64px;
 }
 
@@ -106,20 +110,24 @@ img {
     flex-direction: column;
     padding: 12px;
     overflow: hidden;
-    background-color: pink;
+    background-color: var(--colorCard);
     border: 1px solid var(--colorCardBorder);
     border-radius: 20px;
 }
 
-.playerCard--forward {
+/* Player position colors */
+.playerCard--forward,
+.playerCard__role--forward {
     background-color: var(--colorForward);
 }
 
-.playerCard--defense {
+.playerCard--defense,
+.playerCard__role--defense {
     background-color: var(--colorBlue);
 }
 
-.playerCard--goaltender {
+.playerCard--goaltender,
+.playerCard__role--goaltender {
     background-color: var(--colorGoaltender);
 }
 
@@ -136,7 +144,7 @@ img {
     height: auto;
     aspect-ratio: 1 / 1;
     object-fit: cover;
-    object-position: center 30%;;
+    object-position: center 30%;
 }
 
 .playerCard__role {
@@ -145,23 +153,10 @@ img {
     left: 14px;
     padding: 8px 12px;
     color: var(--colorWhite);
-    background-color: var(--colorBlue);
     border-radius: 6px;
     font-family: var(--fontDisplay);
     font-size: 0.75rem;
     font-weight: 700;
-}
-
-.playerCard__role--forward {
-    background-color: var(--colorForward);
-}
-
-.playerCard__role--defense {
-    background-color: var(--colorBlue);
-}
-
-.playerCard__role--goaltender {
-    background-color: var(--colorGoaltender);
 }
 
 .playerCard__number {
@@ -212,12 +207,10 @@ img {
 /* Footer */
 .siteFooter {
     background-color: var(--colorWhite);
-    border-top: 2px solid var(colorBlue);
+    border-top: 2px solid var(--colorBlue);
 }
 
 .siteFooter__content {
-    width: min(1200px, calc(100% - 40px));
-    margin: 0 auto;
     padding: 24px 0;
 }
 
@@ -234,7 +227,7 @@ img {
 @media (max-width: 500px) {
     .siteHeader__content,
     .squad__content,
-    .witeFooter__content {
+    .siteFooter__content {
         width: calc(100% - 24px);
     }
     .siteHeader__content {
