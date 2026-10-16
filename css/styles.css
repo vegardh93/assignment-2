@@ -247,29 +247,23 @@ img {
     text-align: center;
 }
 
-/* Adjustments for narrow screens: centered branding with navigation below */
+/* Adjustments for small screens: centered branding, reduced spacing and single-column layout */
 @media (max-width: 570px) {
-    .siteHeader__content {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .siteHeader__nav {
-        width: 100%;
-        justify-content: center;
-        margin-left: 0;
-    }
-}
-
-/* Adjustments for small screens: reduced spacing and single-column layout */
-@media (max-width: 500px) {
     .siteHeader__content,
     .squad__content,
     .siteFooter__content {
         width: calc(100% - 24px);
     }
     .siteHeader__content {
+        flex-wrap: wrap;
+        justify-content: center;
         gap: 12px;
         padding: 14px 0;
+    }
+    .siteHeader__nav {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
     }
     .squad__content {
         padding: 32px 0 48px;

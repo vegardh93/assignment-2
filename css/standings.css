@@ -6,7 +6,10 @@
 }
 
 .standings__title {
-    margin: 0 0 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 0 0 24px;
     color: var(--colorText);
     font-family: var(--fontDisplay);
     font-size: 2rem;
@@ -17,6 +20,7 @@
     margin: 0 0 40px;
     color: var(--colorText);
     font-size: 0.875rem;
+    text-align: right;
 }
 
 /* Conference and division headings */
@@ -25,11 +29,29 @@
 }
 
 .standings__conferenceTitle {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     margin: 0 0 24px;
     color: var(--colorNavy);
     font-family: var(--fontDisplay);
     font-size: 1.5rem;
     font-weight: 700;
+}
+
+/* League and conference logos */
+.standings__leagueLogo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.standings__conferenceLogo {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    flex-shrink: 0;
 }
 
 .standings__divisionTitle {
@@ -135,8 +157,8 @@
     font-weight: 800;
 }
 
-/* Adjustments for small screens: reduced spacing and smaller font sizes */
-@media (max-width: 500px) {
+/* Adjustments for small screens: reduced spacing and smaller headings */
+@media (max-width: 570px) {
     .standings__content {
         width: calc(100% - 24px);
         padding: 32px 0 48px;
