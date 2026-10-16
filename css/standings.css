@@ -40,7 +40,6 @@
     font-weight: 700;
 }
 
-/* Standings table */
 /* Table container and scrolling */
 .standings__tableWrapper {
     overflow: hidden;
@@ -131,7 +130,7 @@
 }
 
 .standings__table .standings__row--highlight .standings__team {
-    color:var(--colorBlue);
+    color: var(--colorBlue);
     font-family: var(--fontDisplay);
     font-weight: 800;
 }
