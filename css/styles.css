@@ -12,6 +12,7 @@
     --colorForward: #263c88;
     --colorGoaltender: #006B91;
     --colorTableBorder: #dce4ef;
+    --colorTableHighlight: #dceafb;
     --fontBody: "DM Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
     --fontDisplay: "Outfit", "Avenir Next", "Segoe UI", Arial, sans-serif;
 }
@@ -283,11 +284,14 @@ img {
     }
 }
 
-/* Adjustments for very narrow screens: stack navigations buttons vertically */
+/* Adjustments for very narrow screens: stack navigation buttons vertically */
 @media (max-width: 280px) {
     .siteHeader__nav {
         flex-direction: column;
-        align-items: left;
+        align-items: stretch;
+    }
+    .siteHeader__link {
+        text-align: center;
     }
 }
 

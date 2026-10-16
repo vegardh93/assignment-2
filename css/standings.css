@@ -124,6 +124,18 @@
     vertical-align: middle;
 }
 
+/* Toronto Maple Leafs highlight */
+.standings__table tbody tr.standings__row--highlight {
+    background-color: var(--colorTableHighlight);
+    font-weight: 700;
+}
+
+.standings__table .standings__row--highlight .standings__team {
+    color:var(--colorBlue);
+    font-family: var(--fontDisplay);
+    font-weight: 800;
+}
+
 /* Adjustments for small screens: reduced spacing and smaller font sizes */
 @media (max-width: 500px) {
     .standings__content {
