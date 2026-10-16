@@ -87,6 +87,29 @@ img {
     letter-spacing: 0.025em;
 }
 
+/* Header navigation */
+.siteHeader__nav {
+    display: flex;
+    gap: 12px;
+    margin-left: auto;
+}
+
+.siteHeader__link {
+    padding: 10px 14px;
+    border: 1px solid var(--colorBlue);
+    border-radius: 6px;
+    color: var(--colorBlue);
+    font-family: var(--fontDisplay);
+    font-size: 0.875rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.siteHeader__link:hover {
+    color: var(--colorWhite);
+    background-color: var(--colorBlue);
+}
+
 /* Squad section */
 .squad__content {
     padding: 48px 0 64px;
@@ -223,6 +246,18 @@ img {
     text-align: center;
 }
 
+/* Adjustments for narrow screens: centered branding with navigation below */
+@media (max-width: 570px) {
+    .siteHeader__content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .siteHeader__nav {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0;
+    }
+}
 
 /* Adjustments for small screens: reduced spacing and single-column layout */
 @media (max-width: 500px) {
@@ -235,9 +270,6 @@ img {
         gap: 12px;
         padding: 14px 0;
     }
-    .siteHeader__logo {
-        width: 72px;
-    }
     .squad__content {
         padding: 32px 0 48px;
     }
@@ -248,5 +280,21 @@ img {
     .squad__grid {
         grid-template-columns: 1fr;
         gap: 16px;
+    }
+}
+
+/* Adjustments for very narrow screens: stack navigations buttons vertically */
+@media (max-width: 280px) {
+    .siteHeader__nav {
+        flex-direction: column;
+        align-items: left;
+    }
+}
+
+/* Adjustments for extremely narrow screens: hide player roles and jersey numbers */
+@media (max-width: 225px) {
+    .playerCard__role,
+    .playerCard__number {
+        display: none;
     }
 }
