@@ -1,27 +1,4 @@
-/* Colors and fonts */
-:root {
-    --colorBackground: #f1f5fb;
-    --colorWhite: #ffffff;
-    --colorBlue: #1558ac;
-    --colorNavy: #071c38;
-    --colorCard: #06162d;
-    --colorCardBorder: #1b365b;
-    --colorText: #092449;
-    --colorCardText: #f3f7ff;
-    --colorCardMuted: #a8bfdc;
-    --colorForward: #263c88;
-    --colorGoaltender: #006B91;
-    --colorTableBorder: #dce4ef;
-    --colorTableHighlight: #dceafb;
-    --fontBody: "DM Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
-    --fontDisplay: "Outfit", "Avenir Next", "Segoe UI", Arial, sans-serif;
-}
-
-/* Global styles */
-* {
-    box-sizing: border-box;
-}
-
+/* Body. */
 body {
     margin: 0;
     color: var(--colorText);
@@ -29,12 +6,7 @@ body {
     font-family: var(--fontBody);
 }
 
-img {
-    display: block;
-    max-width: 100%;
-}
-
-/* Shared content layout */
+/* Shared content layout. */
 .siteHeader__content,
 .squad__content,
 .siteFooter__content {
@@ -42,7 +14,7 @@ img {
     margin: 0 auto;
 }
 
-/* Header */
+/* Header. */
 .siteHeader {
     background-color: var(--colorWhite);
     border-bottom: 2px solid var(--colorBlue);
@@ -88,7 +60,7 @@ img {
     letter-spacing: 0.025em;
 }
 
-/* Header navigation */
+/* Header navigation. */
 .siteHeader__nav {
     display: flex;
     gap: 12px;
@@ -111,7 +83,7 @@ img {
     background-color: var(--colorBlue);
 }
 
-/* Squad section */
+/* Squad section. */
 .squad__content {
     padding: 48px 0 64px;
 }
@@ -129,7 +101,7 @@ img {
     gap: 24px;
 }
 
-/* Player cards */
+/* Player cards. */
 .playerCard {
     display: flex;
     flex-direction: column;
@@ -140,7 +112,7 @@ img {
     border-radius: 20px;
 }
 
-/* Player position colors */
+/* Player position colors. */
 .playerCard--forward,
 .playerCard__role--forward {
     background-color: var(--colorForward);
@@ -247,7 +219,7 @@ img {
     text-align: center;
 }
 
-/* Adjustments for small screens: centered branding, reduced spacing and single-column layout */
+/* Adjustments for small screens: centered branding, reduced spacing and single-column layout. */
 @media (max-width: 570px) {
     .siteHeader__content,
     .squad__content,
@@ -278,7 +250,7 @@ img {
     }
 }
 
-/* Adjustments for very narrow screens: stack navigation buttons vertically */
+/* Adjustments for very narrow screens: stack navigation buttons vertically. */
 @media (max-width: 280px) {
     .siteHeader__nav {
         flex-direction: column;
@@ -289,7 +261,7 @@ img {
     }
 }
 
-/* Adjustments for extremely narrow screens: hide player roles and jersey numbers */
+/* Adjustments for extremely narrow screens: hide player roles and jersey numbers. */
 @media (max-width: 225px) {
     .playerCard__role,
     .playerCard__number {

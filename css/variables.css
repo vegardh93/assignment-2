@@ -1,0 +1,18 @@
+/* Colors and fonts. */
+:root {
+    --colorBackground: #f1f5fb;
+    --colorWhite: #ffffff;
+    --colorBlue: #1558ac;
+    --colorNavy: #071c38;
+    --colorCard: #06162d;
+    --colorCardBorder: #1b365b;
+    --colorText: #092449;
+    --colorCardText: #f3f7ff;
+    --colorCardMuted: #a8bfdc;
+    --colorForward: #263c88;
+    --colorGoaltender: #006B91;
+    --colorTableBorder: #dce4ef;
+    --colorTableHighlight: #dceafb;
+    --fontBody: "DM Sans", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+    --fontDisplay: "Outfit", "Avenir Next", "Segoe UI", Arial, sans-serif;
+}

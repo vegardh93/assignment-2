@@ -1,0 +1,12 @@
+/* Reset default spacing and boz sizing. */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive images. */
+img {
+    display: block;
+    max-width: 100%;
+}
